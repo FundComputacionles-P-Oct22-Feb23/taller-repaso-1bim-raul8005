@@ -1,0 +1,47 @@
+Taller repaso 1 Bim
+
+Miniespecificacion
+
+1. Inicio
+2. numero_empleado, i[0,n]
+3. nombre, x(50)[{a-z}, {A-Z}, {BS}]
+4. mensaje x(200)[{a-z}, {A-Z}, {BS}] <--""
+5. cedula, i[0,n]
+6. horastrabajadas_matutinas, i[0,n]
+7. horastrabajadas_nocturnas, i[0,n]
+8. precio_matutino, d[0,n] <--10
+9. precio_nocturo, d[0,n] <--15
+10. porcentaje, i[0,n] <--10
+11. descuento, d[0,n]
+12. sueldofinal, d[0,n]
+13. opcion x(1)[{1-9}]
+14. contador, i [0,n]<-- 1
+15. bandera <-- true 
+16. mientras bandera == true entonces
+17.    Escribe "Ingrese el nombre del empleado"
+18.    Lee nombre
+19.    Escribe "Ingrese su nomero de cedula de identidad"
+20.    Lee cedula
+21.    Escribe "Ingrese el numero de horas matutinas trabajadas"
+22.    Lee horastrabjadas_matutinas
+23.    Escribe "Ingrese el numero de horas nocturnas trabajadas"
+24.    Lee horastrabjadas_nocturnas
+25.    Escribe "Ingrese el numero 5 para continuar, cualquier otro para salir"
+26.    Lee opcion
+27.    mensaje <-- "Rol del trabajador de nombre" + nombre + "y cedula" + cedula + "\n" + "Horas matutina trabajadas:" + 
+        + horastrabjadas_matutinas + "\n" + "Horas nocturnas trabajadas:" + horastrabajadas_nocturnas + "\n"  
+28.    si opcion == 5 entonces
+29.    bandera == false
+30.    Fin Si
+21. sueldofinal <-- horastrabjadas_matutinas * precio_matutino
+32. sueldofinal <-- suelfofinal + (horastrabjadas_nocturno * precio_nocturno)
+33.  Si horastrabjadas_nocturnas >= 10 entonces
+34.    sueldofinal <-- sueldofinal * adicion / 100
+35. Fin Si
+36. mensaje <-- mensaje
+37. contador <-- contador + 1
+38. Fin Mientras 
+39. Escribe mensaje + "\n" + "Toral a candelar:" + "$"sueldofinal + "\n\n" + "Numero de empleados:" + contador
+   
+40. Fin
+ 
